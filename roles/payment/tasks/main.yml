@@ -1,7 +1,7 @@
 - name: Run Python
   ansible.builtin.include_role:
-    name: python
-    tasks_from: nodejs
+    name: common
+    tasks_from: python
 
 - name: Run systemd_setup
   ansible.builtin.include_role:
